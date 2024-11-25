@@ -1,0 +1,33 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    background-color: rgb(187, 218, 243);
+
+}
+
+header{
+    position: relative;
+    background-color: blue;
+}
+
+header div{
+position: relative;
+
+
+
+
+
+}
+
+header div img{
+    
+    height: 50px;
+}
+
+header img{
+    display: flex;
+    margin: auto;
+    height: 500px;
+    background-color: transparent;
+    
+}
