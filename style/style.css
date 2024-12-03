@@ -1,33 +1,48 @@
 *{
-    padding: 0%;
-    margin: 0%;
-    background-color: rgb(187, 218, 243);
-
+    background-color: #73C2FB ;
 }
 
 header{
-    position: relative;
-    background-color: blue;
+    margin: 0%;
+    padding: 0px;
 }
 
-header div{
-position: relative;
-
-
-
-
-
+header div {
+    margin-top: -5px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    
+    
 }
 
 header div img{
-    
-    height: 50px;
+    height: 30px;
 }
 
 header img{
-    display: flex;
-    margin: auto;
-    height: 500px;
+    height: 250px;
+    padding-left: 0px;
+}
+
+.transition1{
+    position: relative;
+    right: 5%;
+}
+
+.final{
+    opacity: 0;
+    position: absolute;
     background-color: transparent;
-    
+}
+
+
+
+#voiture1{
+    margin: auto;
+    display: block;
+
 }
