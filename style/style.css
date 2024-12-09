@@ -7,8 +7,18 @@ header{
     padding: 0px;
 }
 
+#menu{
+    background-color: transparent;
+}
+
+.navigation{
+    padding: 0%;
+    
+    background-color: rgb(117, 180, 232);
+}
+
 header div {
-    margin-top: -5px;
+    margin-top: -7px;
     padding: 0px;
     display: flex;
     justify-content: space-between;
@@ -16,6 +26,11 @@ header div {
     text-align: center;
     text-transform: uppercase;
     
+    
+}
+
+header {
+    background-color: transparent;
     
 }
 
@@ -45,4 +60,10 @@ header img{
     margin: auto;
     display: block;
 
+}
+
+body h2{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
