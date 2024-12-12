@@ -29,3 +29,29 @@ header nav a {
   text-transform: uppercase;
   font-weight: bold;
 }
+
+.logo-image {
+  display: none; /* Cache l'image par défaut */
+  max-width: 200px; /* Ajustez selon vos besoins */
+  height: auto;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .logo-text {
+      display: none; /* Cache le texte pour les petits écrans */
+  }
+
+  .logo-image {
+      display: block; /* Affiche l'image sur les petits écrans */
+  }
+
+  nav ul {
+      flex-direction: column; /* Menu en colonne */
+      align-items: center;
+  }
+  
+  nav li {
+      margin: 5px 0;
+  }
+}
