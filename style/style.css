@@ -1,0 +1,31 @@
+*{
+  background-color: aliceblue;
+}
+
+header h1{
+  justify-content: center;
+  align-self: center;
+  display: flex;
+  font-size: 35px;
+}
+
+header nav ul {
+  list-style: none;
+  margin: -12px;
+  padding: 20px;
+  display: flex; /* Active le mode flexbox pour la liste */
+  justify-content: space-around; /* Distribue les éléments uniformément avec de l'espace autour */
+  /* ou justify-content: space-between; pour de l'espace entre les éléments */
+  /* ou justify-content: flex-start; pour aligner les éléments à gauche */
+  border: 5px solid rgb(155, 155, 251);
+  
+}
+
+
+header nav a {
+  text-decoration: none;
+  color: #333;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
