@@ -74,12 +74,5 @@ nav ul li a {
   z-index: 1; /* Vidéo derrière */
 }
 
-.bloc .overlay-image {
-  position: absolute;
-  bottom: 0; /* Positionne au centre verticalement */
-  left: 50%; /* Positionne au centre horizontalement */
-  transform: translate(-50%); /* Centre l'image par rapport au milieu */
-  z-index: 2; /* Image au-dessus */
-  width: 75%; /* Ajuste la taille selon tes besoins */
-}
+
 
