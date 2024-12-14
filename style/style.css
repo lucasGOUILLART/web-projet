@@ -1,31 +1,107 @@
 *{
-  background-color: aliceblue;
+  Font-family: Copperplate, Copperplate Gothic Light, fantasy;
+  margin: 0;
 }
 
-header h1{
-  justify-content: center;
-  align-self: center;
+header {
   display: flex;
-  font-size: 35px;
-}
-
-header nav ul {
-  list-style: none;
-  margin: -12px;
-  padding: 20px;
-  display: flex; /* Active le mode flexbox pour la liste */
-  justify-content: space-around; /* Distribue les éléments uniformément avec de l'espace autour */
-  /* ou justify-content: space-between; pour de l'espace entre les éléments */
-  /* ou justify-content: flex-start; pour aligner les éléments à gauche */
-  border: 5px solid rgb(155, 155, 251);
-  
-}
-
-
-header nav a {
-  text-decoration: none;
-  color: #333;
-  padding: 5px 10px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 10px; /* Ajustez selon vos besoins */
+  background-color: #73c2fb; /* Optionnel : couleur de fond */
   text-transform: uppercase;
   font-weight: bold;
 }
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo-image {
+  width: 50px; 
+  height: auto;
+  margin-right: 10px; 
+}
+
+
+.logo-text {
+  font-size: 25px; 
+  color: #333; 
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px; 
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #333; 
+}
+
+
+
+
+
+.bloc {
+  height: 65vh;
+  width: 100%;
+  background-color: black;
+  position: relative; /* Nécessaire pour positionner les enfants avec position absolue */
+}
+
+.bloc video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover; /* Assure que la vidéo couvre bien tout le conteneur */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1; /* Vidéo derrière */
+}
+
+/* Adaptation pour les téléphones (moins de 768px de largeur) */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column; /* Empile les éléments du header */
+    align-items: flex-start;
+  }
+
+  .menu {
+    margin-bottom: 10px;
+  }
+
+  nav ul {
+    flex-direction: column; /* Liste verticale pour le menu */
+    align-items: flex-start;
+    gap: 10px; /* Espace entre les liens */
+  }
+
+  nav ul li {
+    margin: 0;
+  }
+
+  .bloc {
+    height: 50vh; /* Réduit la hauteur de la vidéo pour les petits écrans */
+  }
+
+  h2 {
+    font-size: 1.2rem; /* Réduit la taille du texte */
+    text-align: center;
+  }
+}
+
