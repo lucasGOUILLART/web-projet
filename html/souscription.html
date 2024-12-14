@@ -2,62 +2,71 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>IconicsMotors</title>
-    <meta name ="author" content="N'DIAYE">
-
-    <link rel="stylesheet" href ="souscription.css">
-
-    <link rel="shortcut icon" href="image/IConiMotors (2).png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de Souscription</title>
+    <link rel="stylesheet" href="../style/souscription.css">
 </head>
-
 <body>
-    <header class="header">
-        <h1>Abonnement pour la Location & le Leasing de Voitures</h1>
-        <p>Choisissez l'abonnement qui vous correspond</p>
-    </header
-    </header>
-    <main class="subscription-section">
-        <div class="subscription-plan">
-            <h2>Citadine</h2>
-            <p>Idéal pour vos trajets quotidiens.</p>
+    <div class="container">
+        <!-- Abonnement Location -->
+        <div class="card">
+            <h2>Abonnement Location</h2>
+            <p>Une solution flexible pour accéder à un véhicule sans engagement à long terme.</p>
             <ul>
-                <li>Accès à des voitures compactes</li>
-                <li>Kilométrage limité : 1 000 km/mois</li>
-                <li>Assurance de base incluse</li>
+                <li>Entretien et assurance inclus</li>
+                <li>Pneus été/hiver inclus</li>
+                <li>Changement de véhicule 4 fois/an</li>
             </ul>
-            <p class="price">29,99€/mois</p>
-            <button>S'abonner</button>
+            <p class="price">249€/mois</p>
+            <button>Souscrire</button>
         </div>
 
-        <div class="subscription-plan premium">
-            <h2>Supercar</h2>
-            <p>Pour des expériences inoubliables.</p>
+        <!-- Abonnement Leasing -->
+        <div class="card">
+            <h2>Abonnement Leasing</h2>
+            <p>Idéal pour une utilisation à long terme avec option d'achat.</p>
             <ul>
-                <li>Accès à des voitures sportives</li>
-                <li>Kilométrage : 2 000 km/mois</li>
-                <li>Assurance premium incluse</li>
+                <li>Entretien inclus</li>
+                <li>Assurance en option</li>
+                <li>Possibilité d'achat en fin de contrat</li>
             </ul>
-            <p class="price">199,99€/mois</p>
-            <button>S'abonner</button>
+            <p class="price">199€/mois</p>
+            <button>Souscrire</button>
         </div>
-        
-        <div class="subscription-plan">
-            <h2>Hypercar</h2>
-            <p>Pour une conduite d'exception.</p>
-            <ul>
-                <li>Accès aux véhicules les plus luxueux</li>
-                <li>Kilométrage illimité</li>
-                <li>Assistance 24/7 incluse</li>
-            </ul>
-            <p class="price">999,99€/mois</p>
-            <button>S'abonner</button>
-        </div>
-    </main>
+    </div>
 
-    <footer class="footer">
-        <p>&copy; 2024 Location et Leasing. Tous droits réservés.</p>
-    </footer>
-    
+        <!-- Formulaire de souscription -->
+    <div id="subscription-form-container" style="display: none;">
+        <form id="subscription-form">
+            <h2>Formulaire de Souscription</h2>
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="surname">Prénom :</label>
+            <input type="text" id="surname" name="surname" required>
+
+            <label for="age">Âge :</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="address">Adresse :</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="email">Adresse e-mail :</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Numéro de téléphone :</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="duration">Durée (en mois) :</label>
+            <input type="number" id="duration" name="duration" required>
+
+            <label for="car">Modèle de voiture :</label>
+            <input type="text" id="car" name="car" required>
+
+            <button type="submit">Envoyer</button>
+            <button type="button" id="cancel-button">Annuler</button>
+        </form>
+    </div>
+
 </body>
-
 </html>
