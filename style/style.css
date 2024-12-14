@@ -1,57 +1,55 @@
 *{
-  background-color: aliceblue;
-}
-
-header h1{
-  justify-content: center;
-  align-self: center;
-  display: flex;
-  font-size: 35px;
-}
-
-header nav ul {
-  list-style: none;
-  margin: -12px;
-  padding: 20px;
-  display: flex; /* Active le mode flexbox pour la liste */
-  justify-content: space-around; /* Distribue les éléments uniformément avec de l'espace autour */
-  /* ou justify-content: space-between; pour de l'espace entre les éléments */
-  /* ou justify-content: flex-start; pour aligner les éléments à gauche */
-  border: 5px solid rgb(155, 155, 251);
+  Font-family: Copperplate, Copperplate Gothic Light, fantasy;
   
 }
 
-
-header nav a {
-  text-decoration: none;
-  color: #333;
-  padding: 5px 10px;
+header {
+  margin: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 10px; /* Ajustez selon vos besoins */
+  background-color: #73c2fb; /* Optionnel : couleur de fond */
   text-transform: uppercase;
   font-weight: bold;
 }
 
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
 .logo-image {
-  display: none; /* Cache l'image par défaut */
-  max-width: 200px; /* Ajustez selon vos besoins */
+  width: 50px; 
   height: auto;
-  margin: 0 auto;
+  margin-right: 10px; 
 }
 
-@media only screen and (max-width: 768px) {
-  .logo-text {
-      display: none; /* Cache le texte pour les petits écrans */
-  }
-
-  .logo-image {
-      display: block; /* Affiche l'image sur les petits écrans */
-  }
-
-  nav ul {
-      flex-direction: column; /* Menu en colonne */
-      align-items: center;
-  }
-  
-  nav li {
-      margin: 5px 0;
-  }
+.logo-text {
+  font-size: 25px; 
+  color: #333; 
 }
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px; 
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #333; 
+}
+
