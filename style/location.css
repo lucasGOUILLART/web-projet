@@ -10,7 +10,7 @@ body {
     color: #fff; /* Texte blanc pour un bon contraste */
 }
 
-<<<<<<< HEAD
+
 header {
     display: flex;
     align-items: center;
@@ -64,11 +64,11 @@ header {
 .headder {
     background-color: #fff;
     color: #73C2FB;
-=======
-.header {
+}
+
+.headder {
     background-color: #000;
     color: #4da8da; /* Bleu clair pour un meilleur contraste */
->>>>>>> 7b491efcfa58667df2f8c6431be0e3d9c4b1f8b7
     text-align: center;
     padding: 20px 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
