@@ -18,7 +18,8 @@
                 <li>Changement de véhicule 4 fois/an</li>
             </ul>
             <p class="price">249€/mois</p>
-            <button>Souscrire</button>
+            <!-- Lien avec la checkbox -->
+            <label for="subscription-toggle" class="button">Souscrire</label>
         </div>
 
         <!-- Abonnement Leasing -->
@@ -31,12 +32,18 @@
                 <li>Possibilité d'achat en fin de contrat</li>
             </ul>
             <p class="price">199€/mois</p>
-            <button>Souscrire</button>
+            <!-- Lien avec la checkbox -->
+            <label for="subscription-toggle" class="button">Souscrire</label>
         </div>
     </div>
 
-        <!-- Formulaire de souscription -->
-    <div id="subscription-form-container" style="display: none;">
+    <!-- Checkbox cachée pour contrôler l'affichage -->
+    <input type="checkbox" id="subscription-toggle" style="display: none;">
+
+    <!-- Formulaire de souscription -->
+     
+    <label for="subscription-toggle" id="overlay"></label> <!-- Ligne à ajouter -->
+    <div id="subscription-form-container">    
         <form id="subscription-form">
             <h2>Formulaire de Souscription</h2>
             <label for="name">Nom :</label>
@@ -60,13 +67,20 @@
             <label for="duration">Durée (en mois) :</label>
             <input type="number" id="duration" name="duration" required>
 
-            <label for="car">Modèle de voiture :</label>
-            <input type="text" id="car" name="car" required>
+            <label for="car">Type de voiture :</label>
+            <select id="car" name="car" required>
+                <option value="">Sélectionnez un type</option>
+                <option value="hypercars">Hypercar</option>
+                <option value="supercars">Supercar</option>
+                <option value="citadine">Citadine</option>
+            </select>
 
             <button type="submit">Envoyer</button>
-            <button type="button" id="cancel-button">Annuler</button>
+            <!-- Annuler : décocher la checkbox -->
+            <label for="subscription-toggle" class="button">Annuler</label>
         </form>
-    </div>
-
+        <div id="confirmation-message">
+            <p>Votre demande a été enregistrée. Nous vous recontacterons prochainement !</p>
+    </div>    
 </body>
 </html>
