@@ -17,7 +17,9 @@ header {
   justify-content: space-between; /* Espacement uniforme entre les éléments */
   flex-wrap: nowrap; /* Empêche les éléments de passer à la ligne */
 }
-
+nav a:hover {
+  border-bottom: 2px solid #fff;
+}
 
 .menu {
   display: flex;
