@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box; /* Garantit une gestion plus prévisible des tailles */
   Font-family: Copperplate, Copperplate Gothic Light, fantasy; 
-
 }
 
 header {
@@ -129,7 +128,6 @@ h2{
 
 .car-card .price {
   color: #000;
-  font-weight: bold;
   margin: 10px 0;
 }
 
@@ -213,7 +211,6 @@ footer {
 .footer-links ul li a {
   color: #ffffff;
   text-decoration: none;
-  font-weight: bold;
 }
 
 .footer-links ul li a:hover {
@@ -244,7 +241,6 @@ footer {
 .footer-bottom a {
   color: #ffffff;
   text-decoration: none;
-  font-weight: bold;
 }
 
 .footer-bottom a:hover {
