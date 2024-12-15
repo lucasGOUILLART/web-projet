@@ -6,12 +6,18 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #001f4d; /* Un bleu foncé plus doux pour une meilleure lisibilité */
+    background-color: #fff; /* Un bleu foncé plus doux pour une meilleure lisibilité */
     color: #fff; /* Texte blanc pour un bon contraste */
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('votre-image.jpg');
     background-size: cover;
     background-position: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url('../image/porcshe fond.png'); 
 }
+
+
 
 
 header {

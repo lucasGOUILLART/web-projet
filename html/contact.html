@@ -2,14 +2,144 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>IconicsMotors</title>
-    <meta name ="author" content="N'DIAYE">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Location de Voitures</title>
+    <link rel="stylesheet" href="../style/contact.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            background-image: url('../image/background.jpg'); /* Arrière-plan optionnel */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #333;
+        }
 
-    <link rel="shortcut icon" href="image/IConiMotors (2).png">
+        header {
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            margin-bottom: 30px;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .form-group button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .form-group button:hover {
+            background-color: #0056b3;
+        }
+
+        .social-links {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            margin: 0 10px;
+            color: #007BFF;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .social-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
-
 <body>
-    <H1> Page Contact</H1>
+    <header>
+        <h1>Contactez-nous</h1>
+    </header>
+
+    <div class="container">
+        <section class="contact-info">
+            <h2>Informations de contact</h2>
+            <p><strong>Adresse :</strong> 123 Rue de l'Automobile, Paris, France</p>
+            <p><strong>Téléphone :</strong> +33 1 23 45 67 89</p>
+            <p><strong>Email :</strong> contact@locationvoitures.com</p>
+        </section>
+
+        <section class="contact-form">
+            <h2>Envoyez-nous un message</h2>
+                <div class="form-group">
+                    <label for="name">Nom complet :</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Adresse e-mail :</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Envoyer</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="social-links">
+            <h2>Suivez-nous</h2>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </section>
+    </div>
 </body>
 </html>
-
