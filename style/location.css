@@ -13,7 +13,63 @@ body {
     background-position: center;
 }
 
-.header {
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px; /* Ajustez selon vos besoins */
+    background-color: #73c2fb; /* Optionnel : couleur de fond */
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  .menu {
+    display: flex;
+    align-items: center;
+  }
+  
+  .menu a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  
+  .logo-image {
+    width: 50px; 
+    height: auto;
+    margin-right: 10px; 
+  }
+  
+  
+  .logo-text {
+    font-size: 25px; 
+    color: #333; 
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin: 0 15px; 
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #333; 
+  }
+  
+.headder {
+    background-color: #fff;
+    color: #73C2FB;
+}
+
+.headder {
     background-color: #000;
     color: #4da8da; /* Bleu clair pour un meilleur contraste */
     text-align: center;
@@ -97,3 +153,33 @@ body {
         padding: 15px;
     }
 }
+
+@media (max-width: 768px) {
+    header {
+      flex-direction: column; /* Empile les éléments du header */
+      align-items: flex-start;
+    }
+  
+    .menu {
+      margin-bottom: 10px;
+    }
+  
+    nav ul {
+      flex-direction: column; /* Liste verticale pour le menu */
+      align-items: flex-start;
+      gap: 10px; /* Espace entre les liens */
+    }
+  
+    nav ul li {
+      margin: 0;
+    }
+  
+    .bloc {
+      height: 50vh; /* Réduit la hauteur de la vidéo pour les petits écrans */
+    }
+  
+    h2 {
+      font-size: 1.2rem; /* Réduit la taille du texte */
+      text-align: center;
+    }
+  }

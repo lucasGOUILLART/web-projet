@@ -1,49 +1,104 @@
-body {
-    font-family: Arial, sans-serif;
+*{
     margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #f0faf9;
+    Font-family: Copperplate, Copperplate Gothic Light, fantasy; 
 }
 
+
+
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 10px 10px; /* Ajustez selon vos besoins */
+    background-color: #73c2fb; /* Optionnel : couleur de fond */
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+
+  body{
+    background-color: aliceblue;
+  }
+
+  .menu {
+    display: flex;
+    align-items: center;
+  }
+  
+  .menu a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  
+  .logo-image {
+    width: 50px; 
+    height: auto;
+    margin-right: 10px; 
+  }
+  
+  
+  .logo-text {
+    font-size: 25px; 
+    color: #333; 
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin: 0 15px; 
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #333; 
+  }
+
+/* Conteneur principal */
 .container {
     display: flex;
     gap: 20px;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    height: 100vh; /* Fait en sorte que le conteneur prenne toute la hauteur de la fenêtre */
+    margin: 0; /* Supprime les marges par défaut */
+    padding: 0; /* Supprime le padding */
 }
 
+
+/* Carte */
 .card {
-    background: white;
+    background: #f9f9f9;
     border: 1px solid #ddd;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    width: 300px;
     text-align: center;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .card h2 {
-    margin: 0;
+    font-size: 20px;
     color: #333;
-}
-
-.card p {
-    margin: 15px 0;
-    color: #555;
-    font-size: 14px;
 }
 
 .card ul {
     list-style-type: none;
     padding: 0;
-    margin: 10px 0;
-    text-align: left;
 }
 
 .card ul li {
-    margin-bottom: 10px;
+    margin: 10px 0;
+    color: #666;
 }
 
 .card .price {
@@ -52,20 +107,17 @@ body {
     margin: 20px 0;
 }
 
-.card button {
-    background-color: #007bff;
+.button {
+    display: inline-block;
+    background: #007bff;
     color: white;
-    border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
+    text-decoration: none;
 }
 
-.card button:hover {
-    background-color: #0056b3;
-}
-
+/* Formulaire de souscription */
 #subscription-form-container {
     position: fixed;
     top: 0;
@@ -73,9 +125,32 @@ body {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
+    z-index: 1000;
+}
+
+/* Overlay pour fermer le formulaire */
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 1000;
+}
+
+/* Afficher l'overlay lorsque la checkbox est cochée */
+#subscription-toggle:checked ~ #overlay {
+    display: block;
+}
+
+/* Afficher le formulaire lorsque la checkbox est cochée */
+#subscription-toggle:checked ~ #subscription-form-container {
+    display: flex;
 }
 
 #subscription-form {
@@ -101,7 +176,8 @@ body {
     font-size: 14px;
 }
 
-#subscription-form button {
+#subscription-form button,
+#subscription-form .button {
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -114,8 +190,78 @@ body {
     color: white;
 }
 
-#subscription-form button[type="button"] {
+#subscription-form .button {
     background-color: #ccc;
     color: black;
+    text-align: center;
+    display: inline-block;
+    margin-top: 10px;
 }
 
+/* Message de confirmation */
+#confirmation-message {
+    position: absolute; /* Ligne à modifier */
+    top: 20%; /* Ligne à modifier */
+    left: 50%; /* Ligne à modifier */
+    transform: translate(-50%, -50%); /* Ligne à modifier */
+    z-index: 1100; /* Ligne à modifier */
+    display: none;
+    text-align: center;
+    padding: 20px;
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Afficher le message de confirmation lorsque le formulaire est soumis */
+form:valid + #confirmation-message {
+    display: block;
+    border: 2px solid green;
+}
+
+/* Masquer le formulaire lorsque le message de confirmation est affiché */
+form:valid {
+    display: none;
+}
+
+#subscription-form select {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    header {
+      flex-direction: column; /* Empile les éléments du header */
+      align-items: flex-start;
+    }
+  
+    .menu {
+      margin-bottom: 10px;
+    }
+  
+    nav ul {
+      flex-direction: column; /* Liste verticale pour le menu */
+      align-items: flex-start;
+      gap: 10px; /* Espace entre les liens */
+    }
+  
+    nav ul li {
+      margin: 0;
+    }
+  
+    .bloc {
+      height: 50vh; /* Réduit la hauteur de la vidéo pour les petits écrans */
+    }
+  
+    h2 {
+      font-size: 1.2rem; /* Réduit la taille du texte */
+      text-align: center;
+    }
+  }
