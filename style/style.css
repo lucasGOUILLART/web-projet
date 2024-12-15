@@ -18,10 +18,6 @@ header {
   flex-wrap: nowrap; /* Empêche les éléments de passer à la ligne */
 }
 
-#corps {
-  background-color: #73c2fb; /* Utilisez la même couleur que votre header ou autre */
-  padding-bottom: -200px;
-}
 
 .menu {
   display: flex;
