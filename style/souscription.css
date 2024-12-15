@@ -19,10 +19,12 @@ header {
   }
 
 
-  body{
-    background-color: aliceblue;
-  }
-
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Assure que le contenu couvre au moins la fenêtre */
+    margin: 0;
+}
   .menu {
     display: flex;
     align-items: center;
@@ -65,14 +67,16 @@ header {
 
 /* Conteneur principal */
 .container {
-    display: flex;
-    gap: 20px;
-    justify-content: center; /* Centre horizontalement */
-    align-items: center; /* Centre verticalement */
-    height: 100vh; /* Fait en sorte que le conteneur prenne toute la hauteur de la fenêtre */
-    margin: 0; /* Supprime les marges par défaut */
-    padding: 0; /* Supprime le padding */
+  flex: 1; /* Permet au conteneur principal de prendre tout l'espace disponible */
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
+
+
 
 
 /* Carte */
@@ -267,12 +271,12 @@ form:valid {
   }
 
   footer {
-    background-color: #73c2fb; /* Couleur bleu maya */
-    color: #ffffff; /* Texte blanc */
+    background-color: #73c2fb;
+    color: #ffffff;
     padding: 20px 10px;
     font-size: 0.9rem;
     text-align: center;
-  }
+}
   
   .footer-content {
     display: flex;
