@@ -1,21 +1,30 @@
-*{
-  Font-family: Copperplate, Copperplate Gothic Light, fantasy;
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Garantit une gestion plus prévisible des tailles */
+  Font-family: Copperplate, Copperplate Gothic Light, fantasy; 
+
 }
 
 header {
+  position: sticky; /* Rend le header collant */
+  top: 0; /* Le header reste collé au sommet de la fenêtre */
+  z-index: 1000; /* Assure qu'il reste au-dessus des autres éléments */
+  background-color: #73c2fb; /* Conserve votre couleur de fond */
+  padding: 10px 10px; /* Conserve votre espacement interne */
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 10px; /* Ajustez selon vos besoins */
-  background-color: #73c2fb; /* Optionnel : couleur de fond */
-  text-transform: uppercase;
-  font-weight: bold;
+  align-items: center; /* Aligne les éléments verticalement */
+  justify-content: space-between; /* Espacement uniforme entre les éléments */
+  flex-wrap: nowrap; /* Empêche les éléments de passer à la ligne */
+}
+nav a:hover {
+  border-bottom: 2px solid #fff;
 }
 
 .menu {
   display: flex;
   align-items: center;
+  justify-content: flex-start; /* Aligne à gauche */
 }
 
 .menu a {
@@ -29,7 +38,6 @@ header {
   height: auto;
   margin-right: 10px; 
 }
-
 
 .logo-text {
   font-size: 25px; 
@@ -56,12 +64,19 @@ nav ul li a {
 
 
 
+h2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 
 .bloc {
   height: 65vh;
   width: 100%;
   background-color: black;
   position: relative; /* Nécessaire pour positionner les enfants avec position absolue */
+  
 }
 
 .bloc video {
@@ -73,6 +88,56 @@ nav ul li a {
   left: 0;
   z-index: 1; /* Vidéo derrière */
 }
+
+/* Conteneur des voitures */
+.cars-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 40px auto;
+  max-width: 1200px;
+}
+
+.car-card {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  text-align: center;
+  width: 30%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.car-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.car-card h3 {
+  font-size: 1.4rem;
+  color: #333;
+  margin: 10px 0;
+}
+
+.car-card p {
+  color: #555;
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+.car-card .price {
+  color: #000;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.car-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
 
 /* Adaptation pour les téléphones (moins de 768px de largeur) */
 @media (max-width: 768px) {
@@ -105,3 +170,95 @@ nav ul li a {
   }
 }
 
+footer {
+  background-color: #73c2fb; /* Même couleur de fond que #corps */
+  color: #ffffff; /* Texte blanc */
+  padding: 20px 10px;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 0; /* Pas de marge entre #corps et le footer */
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ffffff;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-logo-image {
+  width: 50px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin: 5px 0;
+}
+
+.footer-links ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-links ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-contact p {
+  margin: 5px 0;
+}
+
+.footer-contact a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  margin-top: 10px;
+}
+
+.footer-bottom p {
+  margin: 5px 0;
+}
+
+.footer-bottom a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+
+/* Adaptation pour les téléphones (moins de 768px de largeur) */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-logo, .footer-links, .footer-contact {
+    margin-bottom: 15px;
+  }
+}
