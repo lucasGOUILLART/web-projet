@@ -1,191 +1,193 @@
-/* Style global */
 *{
-    Font-family: Copperplate, Copperplate Gothic Light, fantasy;
-    
+  Font-family: Copperplate, Copperplate Gothic Light, fantasy;
+  
 }
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #fff; /* Un bleu foncé plus doux pour une meilleure lisibilité */
-    color: #fff; /* Texte blanc pour un bon contraste */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('votre-image.jpg');
-    background-size: cover;
-    background-position: center;
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    background-image: url('../image/porcshe fond.png'); 
+  margin: 0;
+  padding: 0;
+  background-color: black; /* Un bleu foncé plus doux pour une meilleure lisibilité */
+  color: #fff; /* Texte blanc pour un bon contraste */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('votre-image.jpg');
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  height: 200vh;
+  background-image: url('../image/aafd.png'); 
+  background-size: 70%;
+  background-position: 0%;
+  background-repeat: no-repeat;
 }
 
 
 
 
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 10px; /* Ajustez selon vos besoins */
-    background-color: #73c2fb; /* Optionnel : couleur de fond */
-    text-transform: uppercase;
-    font-weight: bold;
-  }
-  
-  .menu {
-    display: flex;
-    align-items: center;
-  }
-  
-  .menu a {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-  }
-  
-  .logo-image {
-    width: 50px; 
-    height: auto;
-    margin-right: 10px; 
-  }
-  
-  
-  .logo-text {
-    font-size: 25px; 
-    color: #333; 
-  }
-  
-  nav ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav ul li {
-    margin: 0 15px; 
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    font-size: 1rem;
-    color: #333; 
-  }
-  
-.headder {
-    background-color: #fff;
-    color: #73C2FB;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 10px; /* Ajustez selon vos besoins */
+  background-color: #73c2fb; /* Optionnel : couleur de fond */
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo-image {
+  width: 50px; 
+  height: auto;
+  margin-right: 10px; 
+}
+
+
+.logo-text {
+  font-size: 25px; 
+  color: #333; 
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px; 
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #333; 
 }
 
 .headder {
-    background-color: #000;
-    color: #4da8da; /* Bleu clair pour un meilleur contraste */
-    text-align: center;
-    padding: 20px 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  color: #73C2FB;
+}
+
+.headder {
+  background-color: #000;
+  color: #4da8da; /* Bleu clair pour un meilleur contraste */
+  text-align: center;
+  padding: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .catalogue {
-    padding: 40px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .catalogue h2 {
-    border-bottom: 3px solid #4da8da; /* Accentuez la séparation avec une bordure plus marquée */
-    padding-bottom: 10px;
-    margin-bottom: 40px;
-    font-size: 1.8em;
-    color: #4da8da;
+  border-bottom: 3px solid #4da8da; /* Accentuez la séparation avec une bordure plus marquée */
+  padding-bottom: 10px;
+  margin-bottom: 40px;
+  font-size: 1.8em;
+  color: #4da8da;
 }
 
 .cars {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
 
 .car {
-    background-color: #000;
-    color: #4da8da;
-    border-radius: 10px;
-    padding: 20px;
-    width: 300px; /* Ajustez la largeur pour une meilleure disposition */
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #000;
+  color: #4da8da;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px; /* Ajustez la largeur pour une meilleure disposition */
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .car:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.6);
+  transform: translateY(-10px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.6);
 }
 
 .car img {
-    max-width: 100%;
-    border-radius: 10px;
-    margin-bottom: 15px;
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
 }
 
 .car h3 {
-    margin: 10px 0;
-    font-size: 1.5em;
-    color: #fff;
+  margin: 10px 0;
+  font-size: 1.5em;
+  color: #fff;
 }
 
 .car p {
-    font-weight: bold;
-    margin: 5px 0;
-    color: #4da8da;
-    font-size: 1.2em;
+  font-weight: bold;
+  margin: 5px 0;
+  color: #4da8da;
+  font-size: 1.2em;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .car {
-        width: 100%;
-    }
+  .car {
+      width: 100%;
+  }
 
-    .cars {
-        gap: 15px;
-    }
+  .cars {
+      gap: 15px;
+  }
 }
 
 @media (max-width: 576px) {
-    .catalogue h2 {
-        font-size: 1.5em;
-    }
+  .catalogue h2 {
+      font-size: 1.5em;
+  }
 
-    .car {
-        padding: 15px;
-    }
+  .car {
+      padding: 15px;
+  }
 }
 
 @media (max-width: 768px) {
-    header {
-      flex-direction: column; /* Empile les éléments du header */
-      align-items: flex-start;
-    }
-  
-    .menu {
-      margin-bottom: 10px;
-    }
-  
-    nav ul {
-      flex-direction: column; /* Liste verticale pour le menu */
-      align-items: flex-start;
-      gap: 10px; /* Espace entre les liens */
-    }
-  
-    nav ul li {
-      margin: 0;
-    }
-  
-    .bloc {
-      height: 50vh; /* Réduit la hauteur de la vidéo pour les petits écrans */
-    }
-  
-    h2 {
-      font-size: 1.2rem; /* Réduit la taille du texte */
-      text-align: center;
-    }
+  header {
+    flex-direction: column; /* Empile les éléments du header */
+    align-items: flex-start;
   }
+
+  .menu {
+    margin-bottom: 10px;
+  }
+
+  nav ul {
+    flex-direction: column; /* Liste verticale pour le menu */
+    align-items: flex-start;
+    gap: 10px; /* Espace entre les liens */
+  }
+
+  nav ul li {
+    margin: 0;
+  }
+
+  .bloc {
+    height: 50vh; /* Réduit la hauteur de la vidéo pour les petits écrans */
+  }
+
+  h2 {
+    font-size: 1.2rem; /* Réduit la taille du texte */
+    text-align: center;
+  }
+}
