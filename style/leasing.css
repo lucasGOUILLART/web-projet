@@ -85,7 +85,7 @@ h2 {
   font-weight: bold;
 }
 
-/* Styles pour les modales */
+/* styles pour les modales */
 .modal {
   display: none;
   position: fixed;
@@ -128,8 +128,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 10px; /* Ajustez selon vos besoins */
-  background-color: #73c2fb; /* Optionnel : couleur de fond */
+  padding: 10px 10px; 
+  background-color: #73c2fb; 
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -181,7 +181,7 @@ nav ul li a {
 
 @media (max-width: 768px) {
   header {
-    flex-direction: column; /* Empile les éléments du header */
+    flex-direction: column; 
     align-items: flex-start;
   }
 
@@ -190,9 +190,9 @@ nav ul li a {
   }
 
   nav ul {
-    flex-direction: column; /* Liste verticale pour le menu */
+    flex-direction: column;
     align-items: flex-start;
-    gap: 10px; /* Espace entre les liens */
+    gap: 10px;
   }
 
   nav ul li {
@@ -200,11 +200,11 @@ nav ul li a {
   }
 
   .bloc {
-    height: 50vh; /* Réduit la hauteur de la vidéo pour les petits écrans */
+    height: 50vh; 
   }
 
   h2 {
-    font-size: 1.2rem; /* Réduit la taille du texte */
+    font-size: 1.2rem; 
     text-align: center;
   }
 }
