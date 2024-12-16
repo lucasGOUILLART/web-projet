@@ -4,6 +4,9 @@
 }
 
 body {
+  background-image: url("../image/fondleasin.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -28,7 +31,7 @@ nav {
 
 nav a {
   text-decoration: none;
-  color: #fff;
+  color: #ffffff;
   margin: 0 15px;
   font-weight: bold;
   border-bottom: 2px solid transparent;
@@ -42,7 +45,7 @@ section {
   margin: 30px auto;
   padding: 20px;
   max-width: 1000px;
-  background-color: #4da8da;
+  background-color: #282a2c5d;
   border-radius: 10px;
 }
 
@@ -104,10 +107,11 @@ h2 {
   border-radius: 10px;
   text-align: center;
   color: #000;
+  width: 80%;
 }
 
 .modal-content img {
-  max-width: 100%;
+  max-width: 30%;
   border-radius: 10px;
 }
 
@@ -116,7 +120,7 @@ h2 {
   margin-top: 20px;
   text-decoration: none;
   font-weight: bold;
-  color: hsl(0, 0%, 100%);
+  color: hsl(0, 61%, 48%);
 }
 
 header {
